@@ -1,0 +1,20 @@
+.form2,
+.game-button,
+.game {
+  display: none;
+}
+
+.form1.submitted {
+  display: none;
+}
+.form1.submitted + .form2:not(.submitted) {
+  display: block;
+}
+
+.form2.submitted + .game-button:not(.submitted) {
+  display: block;
+}
+
+.game-button.submitted + .game {
+  display: block;
+}
